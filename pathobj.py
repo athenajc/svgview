@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import patches, transforms
 from object import *
 from mathxy import *
-import ui
+
     
 class PathObj(object):
     def __init__(self, e=None, dtype=None): 

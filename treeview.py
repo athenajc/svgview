@@ -437,8 +437,8 @@ class TreeNotebook(tk.Frame):
         #self.notebook.select(n)        
         return widget             
            
-import ui
-from ui import Messagebox 
+import aui
+from aui import Messagebox 
 class TestFrame(tk.Frame):
     def __init__(self, master, select_act=None):       
         tk.Frame.__init__(self, master)
@@ -508,8 +508,8 @@ if __name__ == '__main__':
         root.geometry('500x900') 
         frame = TestFrame(root)
         frame.pack(fill='both', expand=True)
-        frame.on_select_file('/home/athena/src/svg/svg/path.svg', '')
-        frame.set_path('/home/athena/src/svg/svg')
+        frame.on_select_file('/home/athena/src/svgview/svg/path.svg', '')
+        frame.set_path('/home/athena/src/svgview/svg')
         frame.mainloop()   
     
     main()

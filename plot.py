@@ -4,7 +4,7 @@ import matplotlib as mp
 import matplotlib.pyplot as plt 
 from matplotlib import patches, transforms, bezier
 
-import ui
+from aui import ImageObj
            
 class Plot(object):
     def __init__(self, yaxis=1, size=(6.4, 6.4)):
@@ -58,11 +58,11 @@ class Plot(object):
         
     def show_image(self, filename):    
         filename = os.path.realpath(filename)    
-        img = ui.ImageObj(filename)
+        img = ImageObj(filename)
         w, h = img.size
         m = max(w, h)
         w, h = int(w * 300/m), int(h * 300/m)
-        img = ui.ImageObj(filename, size=(w, h))    
+        img = ImageObj(filename, size=(w, h))    
         img = img.get_array()
         self.fig.set_figwidth(10)        
         dpi = self.fig.dpi

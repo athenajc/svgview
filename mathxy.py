@@ -8,7 +8,7 @@ from shapely.geometry import polygon, linestring
 from scipy.special import comb
 from scipy import ndimage
 import plot
-import ui
+from aui import Tlog
        
 MOVETO, LINETO, CURVE3, CURVE4, CLOSEPOLY = 1, 2, 3, 4, 79    
    
@@ -148,7 +148,7 @@ def circle_xy(cx, cy, r):
 class Plot(plot.Plot):
     pass
     
-class tlog(ui.Tlog):
+class tlog(Tlog):
     pass
     
 class Bbox(mp.transforms.Bbox):

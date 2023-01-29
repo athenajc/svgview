@@ -8,7 +8,7 @@ gi.require_version('GdkPixbuf', '2.0')
 from gi.repository import GdkPixbuf
 from treeview import TestFrame
 from svgpath import SvgPath
-from ui import TwoFrame, ImageObj
+from aui import TwoFrame, ImageObj
 from fileio import fread
      
 class ViewFrame(tk.Canvas):
@@ -81,7 +81,7 @@ class TestFrame1(tk.Frame):
         frame.pack(fill='both', expand=True)
         frame1 = TestFrame(frame.left, self.test_svg)
         frame1.pack(fill='both', expand=True)    
-        frame1.set_path('/home/athena/src/svg/svg')
+        frame1.set_path('/home/athena/src/images/svg/')
         self.svgview = ViewFrame(frame.right)
         self.svgview.pack(fill='both', expand=True)
         

@@ -274,7 +274,7 @@ if __name__ == '__main__':
     from matplotlib import pyplot as plt
     def test_file(s):    
         from svgpath import test_svg        
-        plt.style.use('seaborn-dark')
+  
         filename = 'svg/%s.svg' %s
         test_svg(filename=filename, img=True) 
         
